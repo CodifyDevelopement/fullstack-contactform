@@ -20,7 +20,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://10.0.0.26:5000/api/contact", {
+      const response = await fetch("https://contact-api-eta.vercel.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
